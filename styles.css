@@ -1,0 +1,61 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+  padding: 1rem 2rem;
+}
+
+nav.scrolled {
+  background-color: #333;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #ff9800;
+  transform: scale(1.1);
+}
+
+/* Dummy content sections */
+main {
+  margin-top: 100px;
+}
+
+section {
+  height: 100vh;
+  padding: 2rem;
+  background: #f4f4f4;
+  border-bottom: 1px solid #ccc;
+}
+
+section:nth-child(even) {
+  background: #e0e0e0;
+}
